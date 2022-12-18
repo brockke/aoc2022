@@ -7,7 +7,7 @@ const dir = `${day}`;
 
 const encoder = new TextEncoder();
 const data = encoder.encode(`export {}\n
-const input = (await Deno.readTextFile("./input.txt")).split('\n');
+const input = (await Deno.readTextFile("./input.txt")).split("\\n");
 `);
 
 await Deno.mkdir(dir);
